@@ -1,0 +1,17 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "run1": "node index1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "truffle-contract": "^4.0.31",
+    "web3": "1.2.6"
+  }
+}

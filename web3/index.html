@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+
+<body>
+    
+</body>
+<script>
+    if (typeof web3 !== 'undefined') {
+            web3 = new Web3(web3.currentProvider);
+        } else {
+            // 连接端口如果不一样请自行更改
+            web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+        }
+        console.log(web3)
+        web3.eth.net.isListening().then((res)=>{ }) //连接上了
+            // console.log(res)
+
+            // web3.eth.getCoinbase().then(res=>{
+            //     console.log(res)
+            // })
+//             // // debugger
+            // web3.eth.getAccounts().then(res=>{
+            //     debugger
+            // })
+
+//             web3.eth.getBlockNumber().then(console.log);
+//             web3.eth.getGasPrice()
+// .then(console.log);
+// web3.eth.getCode("0x70B8C1464B3fb381E3f0b4D0F4d3f0950083d943")
+// .then(console.log);
+        //    web3.eth.getBlock().then(res=>console.log(res,222));
+           
+       
+        // console.log(web3.utils.toWei('1','tether'))
+        // console.log(web3.utils.toBN('121217271727178727177277727172778'))
+        // web3.eth.accounts.create().then((accounts)=>{
+        //     // console.log(web3.eth.accounts)
+        //     console.log(accounts)
+        // })
+        // let acc = web3.eth.accounts.create()
+        // console.log(acc);;
+        
+        // web3.eth.getBlock(2063 ,true,function(err,res){
+        //     console.log(res);
+        // })
+        // var filter =  web3.eth.filter('latest');
+        // console.log(filter)
+        // web3.eth.getPastLogs({
+        //     fromBlock:"pending",
+        //     // toBlock:"latest",
+        //     // address:'0x2b7381c978ddeeba76315f941532a97930b95a1fc29d7e6aaef37600c5060526'
+        // } ).then(console.log)
+        // filter.watch()
+    // console.log(web3.eth.getBlockNumber().then(res=>{
+    //     console.log(res,33);
+    // }));
+    // 返回区块中包含的交易数量。
+//     web3.eth.getBlockTransactionCount("0x43934afc4c45236b8645c9af53928c91ce44b8c619716bccb6ca442777131532")
+// .then(console.log);
+
+// web3.eth.getBalance("0x3A93a9f40917fD533B6E5B606861BA1a4383778c")
+
+// .then(console.log);
+// web3.eth.getBalance("0x329288eC08E45AE6d33637Ea3f57c37a51E2f8E9")
+
+// .then(console.log);
+// console.log(web3)
+
+// console.log(web3.eth.accounts.create());
+// console.log(web3.eth.accounts)
+// web3.eth.getAccounts()
+// .then(console.log);
+
+
+</script>
+</html>
